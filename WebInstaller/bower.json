@@ -1,0 +1,20 @@
+{
+  "name": "WebInstaller",
+  "version": "0.0.0",
+  "main": "webinstaller.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "gitHead": "5b80c910c888a14ccd48e956f56536140c4f2470",
+  "readme": "WebInstaller\n============\n\n[Installing Mozilla webapps](http://https://developer.mozilla.org/en-US/docs/Web/API/Apps.install/ \"Install\") even easier.\n\nDescription\n-----------\nThis lib helps developers to make its apps installable on Firefox.\nIt will append to body (or parent defined at constructor) different classes\nwheter the app is installed, not installed or installations error.\n\nUsage\n-----\n\n```javascript\nvar installer = new WebInstaller(\"http://myhost.com/manifest.webapp\");\n\n$(\"button.install\").click(function() {\n  installer.install();\n});\n```\n\nWhen the plugin has been initiliazed (via calling the constructor) it will add classes to the body according the webapp status so you can style your app:\n\n```css\n    .installed button.install, button.install {\n        display: none;\n    }\n\n    .not-installed button.install {\n        display: block;\n    }\n\n    .error-message {\n        display: none;\n    }\n\n    .install-error .error-message {\n        display: block;\n    }\n```\n\nNo classes are added on browsers which doesn't suppor mozApps.\n    \nThe default classes are:\n\n- installed: When the app is already installed.\n- not-installed: When the app is not installed.\n- install-error: When something goes wrong.\n\n\n\nMore information on Firefox webapps:\n------------------------------------\n\nhttps://developer.mozilla.org/en-US/docs/Web/Apps\n",
+  "readmeFilename": "README.md",
+  "_id": "WebInstaller@1.0.0",
+  "description": "WebInstaller ============",
+  "commit": "5b80c910c888a14ccd48e956f56536140c4f2470",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tehsis/webinstaller.git"
+  }
+}

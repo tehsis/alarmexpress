@@ -1,0 +1,13 @@
+{
+    "name": "Alarm Express",
+    "description": "Una super alarma",
+    "version": "1.0.0",
+    "fullscreen": "true",
+    "icons": {
+        "60": "alarm.png"
+    },
+    "default_locale": "es",
+    "permissions": {
+        "desktop-notification":{}
+    }
+}
